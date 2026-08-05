@@ -35,7 +35,7 @@ def check_stock():
         if "缺貨" in page_text or "Out of Stock" in page_text:
             print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] 目前仍然缺貨中...")
         else:
-            print(f"[{time.strftime('%Y-%m-%d %H:%M:%S'] 🎉 好像有貨啦！")
+            print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] 🎉 好像有貨啦！")
             send_telegram("🎉 【Offer God 補貨通知】文武廟的 Offer God 好像有貨啦！快去搶：https://temples.tungwahcsd.org/product/470")
             
     except Exception as e:
