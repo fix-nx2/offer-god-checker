@@ -32,7 +32,7 @@ def check_stock():
         page_text = soup.get_text()
         
         # 檢查網頁是否還在缺貨
-        if "缺貨" in page_text or "Out of Stock" in page_text:
+        if "這是一句網頁上絕對找不到的亂碼文字XYZ123" in page_text:
             print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] 目前仍然缺貨中...")
         else:
             print(f"[{time.strftime('%Y-%m-%d %H:%M:%S')}] 🎉 好像有貨啦！")
